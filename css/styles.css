@@ -762,6 +762,10 @@ input {
   font-size: 12px;
 }
 
+.comment-div {
+  margin-bottom: 16px;
+}
+
 .modal-checkbox-field {
   margin-bottom: 24px;
 }
@@ -782,18 +786,6 @@ input {
   letter-spacing: 0.04em;
   text-decoration-line: underline;
 }
-
-/* .check-text span {
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-} */
 
 .form-check:checked + .check-text .check-text-span {
   background-color: #404bbf;
