@@ -705,7 +705,7 @@ input {
 }
 
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-input-wrap {
@@ -807,7 +807,7 @@ input {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
