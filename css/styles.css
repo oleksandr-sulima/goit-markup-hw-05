@@ -531,6 +531,10 @@ input {
 .subscribe-container {
   margin-left: 80px;
 }
+
+.subscribe-form {
+  display: flex;
+}
 .subscribe-text {
   color: #fff;
   font-size: 16px;
@@ -589,10 +593,6 @@ input {
 
 .subscribe-button-icon {
   fill: #fff;
-}
-
-.mail-and-btn-container {
-  display: flex;
 }
 
 /* ------- modal------------ */
