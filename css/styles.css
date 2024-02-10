@@ -691,6 +691,7 @@ input {
   outline: transparent;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
 }
 
 .modal-label {
@@ -704,7 +705,7 @@ input {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-input-wrap {
@@ -735,11 +736,14 @@ input {
   border-radius: 4px;
   border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
   outline: transparent;
-  padding-left: 16px;
-  padding-top: 12px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
-  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
 }
 
 .modal-text-area:focus {
@@ -756,6 +760,10 @@ input {
 .input,
 .textarea {
   font-size: 12px;
+}
+
+.modal-checkbox-field {
+  margin-bottom: 24px;
 }
 
 .check-text {
@@ -775,7 +783,7 @@ input {
   text-decoration-line: underline;
 }
 
-.check-text span {
+/* .check-text span {
   width: 16px;
   height: 16px;
   border-radius: 4px;
@@ -785,12 +793,28 @@ input {
   align-items: center;
   justify-content: center;
   fill: transparent;
-}
+} */
 
-.form-check:checked + .check-text span {
+.form-check:checked + .check-text .check-text-span {
   background-color: #404bbf;
   border: none;
-  fill: #fff;
+  fill: #f4f4fd;
+}
+
+.check-text-span {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button {
@@ -805,7 +829,7 @@ input {
   letter-spacing: 0.64px;
   cursor: pointer;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  display: flex;
+  display: block;
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
